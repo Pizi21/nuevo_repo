@@ -1,0 +1,191 @@
+        /*
+body {
+    background-color: burlywood;
+}
+
+@media screen and (min-width: 768px) {
+    .body {
+        background-color: #000000;
+    }
+} */
+        /*
+    * {
+        box-sizing: border-box;
+    }
+    /* Create four equal columns that floats next to each other */
+        /*
+    .column {
+        float: left;
+        width: 25%;
+        padding: 20px;
+    }
+    /* Clear floats after the columns */
+        /*
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* On screens that are 992px wide or less, go from four columns to two columns */
+        /*  @media screen and (max-width: 992px) {
+        .grid-container {
+            width: 50%;
+        }
+    } */
+        /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+        
+        .transform {
+            width: 100px;
+            height: 100px;
+            transition: all 2s;
+        }
+        
+        .transform:hover {
+            height: 200px;
+            width: 200px;
+            padding: 20px;
+            background-color: cyan;
+        }
+        
+        p {
+            animation-duration: 2s;
+            animation-name: aparecer;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes aparecer {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        #margenReview {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        .padding20 {
+            padding: 20px;
+            color: black;
+            text-decoration: none;
+        }
+        
+        .letraSeccion {
+            color: rgb(10, 0, 0);
+            border: 1px solid rgb(10 0 0);
+            border-bottom-width: thick;
+            border-inline-style: none
+        }
+        
+        .submenuReview {
+            color: black;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 25% 30% 25% 15%;
+            grid-template-rows: repeat(6, auto);
+            border: 1px solid black;
+            background-color: burlywood;
+            justify-content: space-around;
+        }
+        
+        .grid-container div {
+            background-color: rgb(138, 172, 173);
+            border: 1px solid black;
+            text-align: left;
+        }
+        
+        .imagen_novela {
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+        
+        .sinopsis_serie {
+            grid-column: 2/3;
+            grid-row: 1/3;
+        }
+        
+        .puntos {
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+        
+        .donde_web {
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        
+        .ranking {
+            grid-column: 4/5;
+            grid-row: 1/-1;
+        }
+        
+        .ranking2 {
+            grid-column: 4/5;
+            grid-row: 1/-1;
+        }
+        
+        .imagen_novela2 {
+            grid-column: 1/2;
+            grid-row: 3/5;
+        }
+        
+        .sinopsis_serie2 {
+            grid-column: 2/3;
+            grid-row: 3/5;
+        }
+        
+        .puntos2 {
+            grid-column: 3/4;
+            grid-row: 3/4;
+        }
+        
+        .donde_web2 {
+            grid-column: 3/4;
+            grid-row: 4/5;
+        }
+        
+        .imagen_novela3 {
+            grid-column: 1/2;
+            grid-row: 5/7;
+        }
+        
+        .sinopsis_serie3 {
+            grid-column: 2/3;
+            grid-row: 5/7;
+        }
+        
+        .puntos3 {
+            grid-column: 3/4;
+            grid-row: 5/6;
+        }
+        
+        .donde_web3 {
+            grid-column: 3/4;
+            grid-row: 6/7;
+        }
+        
+        .style_title {
+            font-size: 20px;
+            text-align: center;
+            font-variant-caps: small-caps;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 576px) {
+            .grid-container {
+                grid-template-columns: 20% 50% 20%;
+            }
+            .ranking {
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+            .ranking2 {
+                grid-column: 1/2;
+                grid-row: 7/8;
+            }
+        }
